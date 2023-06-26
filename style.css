@@ -111,49 +111,87 @@ header h1 {
     -webkit-text-stroke: 0.01px var(--title-color);
 }
 
-.swiper {
-    width: 50%;
-    height: 50%;
-  }
-
-.swiper-slide {
+.slider-container {
+    max-width: 780px;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    position: relative;
-    text-align: center;
-    background-color: #313131;
-}
-
-.swiper-slide .img-box {
-    margin: 30px;
-    text-align: center;
     align-items: center;
-    background-color: red;
-    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-bottom: 20px;
 }
 
-.swiper-slide h4 {
-    font-size: 20px;
-    padding-bottom: 10px;
+.slider {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
 }
 
-.swiper-slide a {
-    padding-bottom: 30px;
-    font-family:  'Anton', sans-serif;
-    color: white;
-    -webkit-text-stroke: 1px var(--title-color);
-    font-size: 15px;
+.slide {
+    flex: 0 0 calc(600px / 3);
+    height: 300px;
+    background-color: #313131;
+    margin: 0 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.slide h4 {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+.slide a {
     background-color: var(--bg-color);
-    padding: 0px 40px;
+    color: white;
+    padding: 2px 30px;
+    border-radius: 10px;
+    font-family:  'Anton', sans-serif;
+    font-size: 13px;
+    -webkit-text-stroke: 0.20px var(--title-color);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.controls button {
+    margin: 0 5px;
+}
+
+.slide img {
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
+.img {
+    background-color: red;
+    margin: 10px;
     border-radius: 10px;
 }
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-  }
+.btn {
+    background-color: var(--bg-color);
+    color: var(--title-color);
+    border: 1px solid var(--title-color);
+    border-radius: 10px;
+    padding: 2px 30px;
+}
+
+.character h5 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 17px;
+    font-weight: 400;
+    opacity: 70%;
+}
 
 .films h2 {
     font-family:  'Anton', sans-serif;
